@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "version": "1.0",
+  "description": "Backend for FF-Drafter",
+  "main": "backend.js",
+  "scripts": {
+    "start": "electron ./src/backend.js\n"
+  },
+  "author": "Pepzii",
+  "license": "ISC"
+}

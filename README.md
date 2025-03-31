@@ -23,4 +23,4 @@ This project powers the backend functionality for FF-Drafter and includes shared
 **Pepzii**
 
 ## License
-ISC
+AGPL-3.0 License

@@ -1,5 +1,5 @@
 const PasswordUtil = require('../security/PasswordUtil');
-const User = require("./Account");
+const User = require("./account");
 
 class Account {
 

@@ -1,5 +1,5 @@
 class playerDetails {
-    constructor() {
+    constructor(name, age, dateOfBirth, height, weight,) {
 
     }
 }

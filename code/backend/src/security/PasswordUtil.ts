@@ -1,8 +1,7 @@
-const bcrypt = require('bcrypt');
+import bcrypt from "bcrypt";
 
-const PasswordUtil = {
-
-    async hashPassword(password) {
+export const PasswordUtil = {
+    async hashPassword(password: string): Promise<string> {
         try {
             const saltRounds = 11;
             return await bcrypt.hash(password, saltRounds);
@@ -12,14 +11,12 @@ const PasswordUtil = {
         }
     },
 
-    async verifyPassword(plainPassword, hashedPassword) {
+    async verifyPassword(plainPassword: string, hashedPassword: string): Promise<boolean> {
         try {
-            return bcrypt.compare(plainPassword, hashedPassword);
+            return await bcrypt.compare(plainPassword, hashedPassword);
         } catch (error) {
             console.error("Error with verifying password: ", error);
             throw new Error("Error with verifying password");
         }
-    }
-}
-
-module.exports = PasswordUtil;
+    },
+};
